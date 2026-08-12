@@ -22,7 +22,7 @@
 
 <div align="center">
 
-### 👉 [https://h-p-jadeja.github.io/LastPiXels/](https://h-p-jadeja.github.io/LastPiXels/)
+### 👉 [https://lastpixels.vercel.app]
 
 </div>
 
