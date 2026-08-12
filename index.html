@@ -3,146 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LastPiXels Gaming Club</title>
+    <title>LastPiXels (LPX) | BGMI Esports Gaming Club</title>
+    <meta name="description" content="LastPiXels (LPX) is a premier BGMI Esports Gaming Club dedicated to competitive dominance and community building.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/jpeg" href="img/LPX-Logo.jpeg">
 </head>
 <body>
+
+    <!-- Sticky Header -->
     <header>
-        <img src="img/LPX-Logo.jpeg" alt="LastPiXels Logo" class="logo">
-        <h1 id="top">LastPiXels (LPX)</h1>
-        <nav>
+        <div class="brand">
+            <a href="#top"><img src="img/LPX-Logo.jpeg" alt="LastPiXels Logo" class="logo"></a>
+            <h1 id="top">LastPiXels <span class="pixel-badge">LPX</span></h1>
+        </div>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+        <nav id="navMenu">
             <a href="#about">About</a>
             <a href="#achievements">Achievements</a>
             <a href="#team">Team</a>
             <a href="#jersey">Jersey</a>
-            <a href="#join-us">Join Us</a>
+            <a href="#join-us" class="nav-cta">Join Us</a>
         </nav>
     </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-tag">// OFFICIAL BGMI ESPORTS CLUB</div>
+        <h2>DOMINATING THE <br><span class="gradient-text">BATTLEFIELD</span></h2>
+        <p>Welcome to LastPiXels (LPX). We are a premier gaming club specializing in BGMI esports, relentless competition, and building an elite community.</p>
+        <div class="hero-buttons">
+            <a href="#team" class="btn btn-primary"><span>⚔️</span> View Squad Roster</a>
+            <a href="#join-us" class="btn btn-secondary"><span>🎯</span> Join Community</a>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Major Titles</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">9</div>
+                <div class="stat-label">Roster Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2x</div>
+                <div class="stat-label">ADYPU Champions</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
     <section id="about">
-        <h2 >About Us</h2>
-        <p>Welcome to LastPiXels, a premier gaming club specializing in BGMI esports. We're dedicated to dominating the battlefield and building a community of skilled players.</p>
+        <div class="section-header">
+            <h2>About Us</h2>
+            <p>Built for glory in the esports arena</p>
+        </div>
+        <div class="about-card">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to <strong>LastPiXels</strong>, a premier gaming club specializing in BGMI esports. We're dedicated to dominating the battlefield, refining tactical strategy, and building a passionate community of skilled players.</p>
+                    <p>From university LAN tournaments to national esports championships, LPX stands for resilience, clutch gameplay, and absolute teamwork.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🎯</span>
+                        <span>Tactical BGMI Esports Operations</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🏆</span>
+                        <span>Multi-Tournament LAN Champions</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⚡</span>
+                        <span>Elite Player & Analyst Talent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Achievements Section -->
     <section id="achievements">
-        <h2>Achievements</h2>
-        <ul class="achievement-list">
-            <a href="https://tekronfest.com/competition" target="_blank"><li class="achievement">🏆 Tekron 2.0 Champions</li></a>
-            <li class="achievement">2x🏆 Time LAN Winners in ADYPU</li>
-            <li class="achievement">UniPin Official Mumbai LAN Finalist</li>
-            <a href="https://www.damrufest.org/newcompetition" target="_blank"><li class="achievement">Damru'25 LAN Finalist</li></a>
-        </ul>
+        <div class="section-header">
+            <h2>Achievements</h2>
+            <p>Our track record of dominance and tournament glory</p>
+        </div>
+        <div class="achievement-grid">
+            <a href="https://tekronfest.com/competition" target="_blank" class="achievement-card">
+                <div class="trophy-icon">🏆</div>
+                <div class="achievement-info">
+                    <div class="achievement-title">Tekron 2.0 Champions <span class="achievement-link-icon">🔗</span></div>
+                </div>
+            </a>
+
+            <div class="achievement-card">
+                <div class="trophy-icon">🏆</div>
+                <div class="achievement-info">
+                    <div class="achievement-title">2x Time LAN Winners in ADYPU</div>
+                </div>
+            </div>
+
+            <a href="https://collegerivals.com" target="_blank" class="achievement-card">
+                <div class="trophy-icon">🏆</div>
+                <div class="achievement-info">
+                    <div class="achievement-title">College Rivals Season 4 ADYPU <span class="achievement-link-icon">🔗</span></div>
+                </div>
+            </a>
+
+            <div class="achievement-card">
+                <div class="trophy-icon">🥈</div>
+                <div class="achievement-info">
+                    <div class="achievement-title">UniPin Official Mumbai LAN Finalist</div>
+                </div>
+            </div>
+
+            <a href="https://www.damrufest.org/newcompetition" target="_blank" class="achievement-card">
+                <div class="trophy-icon">🥈</div>
+                <div class="achievement-info">
+                    <div class="achievement-title">Damru'25 LAN Finalist <span class="achievement-link-icon">🔗</span></div>
+                </div>
+            </a>
+        </div>
     </section>
 
+    <!-- Team Section -->
     <section id="team">
-        <h2>Our Team</h2>
+        <div class="section-header">
+            <h2>Our Team</h2>
+            <p>Meet the warriors behind the LastPiXels banner</p>
+        </div>
         <div class="team-grid">
+            
             <div class="player-card">
-                <h3>Blade</h3>
-                <p>Harshyamsinh Jadeja</p>
-                <p>Assaulter</p>
-                <p>Jersey Number: 9</p>
+                <div class="player-avatar">09</div>
+                <h3 class="player-ign">Blade</h3>
+                <p class="player-realname">Harshyamsinh Jadeja</p>
+                <div class="player-details">
+                    <span class="role-badge">Assaulter</span>
+                    <span class="jersey-number">#9</span>
+                </div>
             </div>
-            <div class="player-card">
-                <h3>Dexy</h3>
-                <p>Jaimin Bhatt</p>
-                <p>IGL</p>
-                <p>Jersey Number: 7</p>
 
-            </div>
             <div class="player-card">
-                <h3>Starboii</h3>
-                <p>Pruthviraj Vala</p>
-                <p>Assaulter</p>
-                <p>Jersey Number: 8</p>
+                <div class="player-avatar">07</div>
+                <h3 class="player-ign">Dexy</h3>
+                <p class="player-realname">Jaimin Bhatt</p>
+                <div class="player-details">
+                    <span class="role-badge role-igl">IGL</span>
+                    <span class="jersey-number">#7</span>
+                </div>
+            </div>
 
-            </div>
             <div class="player-card">
-                <h3>Lex</h3>
-                <p>Ashu Chaudhary</p>
-                <p>Assaulter</p>
-                <p>Jersey Number: 21</p>
+                <div class="player-avatar">08</div>
+                <h3 class="player-ign">Starboii</h3>
+                <p class="player-realname">Pruthviraj Vala</p>
+                <div class="player-details">
+                    <span class="role-badge">Assaulter</span>
+                    <span class="jersey-number">#8</span>
+                </div>
+            </div>
 
-            </div>
             <div class="player-card">
-                <h3>Scorpio</h3>
-                <p>Yug Dhamecha</p>
-                <p>Support</p>
-                <p>Jersey Number: 49</p>
+                <div class="player-avatar">21</div>
+                <h3 class="player-ign">Lex</h3>
+                <p class="player-realname">Ashu Chaudhary</p>
+                <div class="player-details">
+                    <span class="role-badge">Assaulter</span>
+                    <span class="jersey-number">#21</span>
+                </div>
             </div>
-            <div class="player-card">
-                <h3>Phantom</h3>
-                <p>Param Bhalodiya</p>
-                <p>Manager</p>
-                <p>Jersey Number: 20</p>
 
-            </div>
             <div class="player-card">
-                <h3>Sarth</h3>
-                <p>Sarth Dhutt</p>
-                <p>Analyst</p>
-                <p>Jersey Number: 44</p>
-
+                <div class="player-avatar">49</div>
+                <h3 class="player-ign">Scorpio</h3>
+                <p class="player-realname">Yug Dhamecha</p>
+                <div class="player-details">
+                    <span class="role-badge">Support</span>
+                    <span class="jersey-number">#49</span>
+                </div>
             </div>
+
             <div class="player-card">
-                <h3>Badmash</h3>
-                <p>Aniket Panara</p>
-                <p>All rounder</p>
-                <p>Jersey Number: 911</p>
-
+                <div class="player-avatar">20</div>
+                <h3 class="player-ign">Phantom</h3>
+                <p class="player-realname">Param Bhalodiya</p>
+                <div class="player-details">
+                    <span class="role-badge role-manager">Manager</span>
+                    <span class="jersey-number">#20</span>
+                </div>
             </div>
+
             <div class="player-card">
-                <h3>Alien</h3>
-                <p>Shyam Zala</p>
-                <p>Assaulter</p>
-                <p>Jersey Number: 914</p>
-
+                <div class="player-avatar">44</div>
+                <h3 class="player-ign">Sarth</h3>
+                <p class="player-realname">Sarth Dhutt</p>
+                <div class="player-details">
+                    <span class="role-badge role-analyst">Analyst</span>
+                    <span class="jersey-number">#44</span>
+                </div>
             </div>
+
+            <div class="player-card">
+                <div class="player-avatar">911</div>
+                <h3 class="player-ign">Badmash</h3>
+                <p class="player-realname">Aniket Panara</p>
+                <div class="player-details">
+                    <span class="role-badge">All Rounder</span>
+                    <span class="jersey-number">#911</span>
+                </div>
+            </div>
+
+            <div class="player-card">
+                <div class="player-avatar">914</div>
+                <h3 class="player-ign">Alien</h3>
+                <p class="player-realname">Shyam Zala</p>
+                <div class="player-details">
+                    <span class="role-badge">Assaulter</span>
+                    <span class="jersey-number">#914</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <!-- Jersey Section -->
     <section id="jersey">
-        <h2>Our Jersey</h2>
-        <p>Check out our official LastPiXels jersey—front and back!</p>
-        <div class="jersey-grid">
-            <div class="jersey-item">
-                <img src="/img/IMG_0999.png" alt="Jersey Front" class="jersey-image">
-                <p>Front View</p>
-            </div>
-            <div class="jersey-item">
-                <img src="img/IMG_1001.png" alt="Jersey Back" class="jersey-image">
-                <p>Back View</p>
+        <div class="section-header">
+            <h2>Our Jersey</h2>
+            <p>Official LastPiXels battle armor—front & back</p>
+        </div>
+        <div class="jersey-container">
+            <div class="jersey-grid">
+                <div class="jersey-item">
+                    <div class="jersey-card">
+                        <img src="img/IMG_0999.png" alt="Jersey Front View" class="jersey-image">
+                    </div>
+                    <p class="jersey-label">Front View</p>
+                </div>
+                <div class="jersey-item">
+                    <div class="jersey-card">
+                        <img src="img/IMG_1001.png" alt="Jersey Back View" class="jersey-image">
+                    </div>
+                    <p class="jersey-label">Back View</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Join Us Section -->
     <section id="join-us">
-        <h2>Join Our Community</h2>
-        <p>Enter your details to connect with us!</p>
-        <form id="visitorForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            
-            <label for="gender">Gender:</label>
-            <select id="gender" required>
-                <option value="Mr">Mr</option>
-                <option value="Ms">Ms</option>
-            </select>
-            
-            <label for="inGameName">In-Game Name:</label>
-            <input type="text" id="inGameName" required>
-            
-            <label for="uid">BGMI UID:</label>
-            <input type="text" id="uid" required>
-            
-            <button type="submit">Submit</button>
-        </form>
-        <div id="thankYouMessage"></div>
+        <div class="section-header">
+            <h2>Join Our Community</h2>
+            <p>Connect with LastPiXels and become part of our gaming arena</p>
+        </div>
+        <div class="form-container">
+            <form id="visitorForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Title / Gender</label>
+                    <select id="gender" class="form-control" required>
+                        <option value="Mr">Mr.</option>
+                        <option value="Ms">Ms.</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inGameName">In-Game Name (IGN)</label>
+                    <input type="text" id="inGameName" class="form-control" placeholder="e.g. LPX_Warrior" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="uid">BGMI UID</label>
+                    <input type="text" id="uid" class="form-control" placeholder="e.g. 5123456789" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn">🚀 Submit Details</button>
+            </form>
+            <div id="thankYouMessage" class="thank-you-card"></div>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>Contact us at: info.lastpixels@gmail.com | Follow us on social media!</p>
-        <span><p>Instagram: <a href="https://www.instagram.com/lastpixelsgg/" id="instalink">LastPiXels</a></p></span>
+        <div class="footer-content">
+            <div class="brand">
+                <img src="img/LPX-Logo.jpeg" alt="LastPiXels Logo" class="logo">
+                <h2 style="font-size: 1.2rem;">LastPiXels (LPX)</h2>
+            </div>
+            <p style="color: var(--text-muted);">Contact us: info.lastpixels@gmail.com</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/lastpixelsgg/" target="_blank" id="instalink" class="social-btn">📸 Instagram @lastpixelsgg</a>
+            </div>
+            <p class="footer-credits">&copy; 2026 LastPiXels Gaming Club. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
